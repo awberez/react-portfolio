@@ -1,0 +1,44 @@
+[
+	{
+		"name": "Barker", 
+		"image": "./images/barker.png", 
+		"link": "https://barkerapp.herokuapp.com/",
+		"github": "https://github.com/awberez/dog-tinder",
+		"text": "A site for finding and connecting with other nearby pet owners to facilitate pet play dates."
+	},
+	{
+		"name": "Resume Builder", 
+		"image": "./images/resume.png", 
+		"link": "https://custom-resume-builder.herokuapp.com/",
+		"github": "https://github.com/awberez/resume_builder",
+		"text": "A tool for building targeted resumes based on keyword tags."
+	},
+	{
+		"name": "Make It or Take It", 
+		"image": "./images/makeIt.png", 
+		"link": "https://thinmintz.github.io/MakeIt-or-TakeIt/",
+		"github": "https://github.com/ThinMintz/MakeIt-or-TakeIt",
+		"text": "Search for recipes or take-out restaurants based on specific ingredients or genres of cuisine."
+	},
+	{
+		"name": "Star Wars Game", 
+		"image": "./images/starwars.png", 
+		"link": "https://awberez.github.io/sw-game/",
+		"github": "https://github.com/awberez/sw-game",
+		"text": "A game based around some of the lesser-known characters from the original Star Wars trilogy."
+	},
+	{
+		"name": "Memory Game", 
+		"image": "./images/memory.png", 
+		"link": "https://awberez.github.io/memory-game/",
+		"github": "https://github.com/awberez/memory-game",
+		"text": "A React application designed to test your memory. Don't click the same color twice!"
+	},
+	{
+		"name": "Dinosaur Triva", 
+		"image": "./images/dinosaur.png", 
+		"link": "https://awberez.github.io/Trivia-Game/",
+		"github": "https://github.com/awberez/Trivia-Game",
+		"text": "Can you answer correctly before the timer runs out?"
+	}
+]

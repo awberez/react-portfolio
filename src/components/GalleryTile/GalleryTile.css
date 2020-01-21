@@ -1,0 +1,12 @@
+.tileImage {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	max-height: 200px;
+	border: 2px solid #474747;
+	border-radius: 5px;
+}
+
+.tile {
+	margin: 10px 0px;
+}

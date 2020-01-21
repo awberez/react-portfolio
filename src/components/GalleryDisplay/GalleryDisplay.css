@@ -1,0 +1,12 @@
+.displayImage {
+	height: auto;
+	width: auto;
+	margin-bottom: 20px;
+	max-width: 75%;
+	background-image: url(/images/irongrip.png);;
+}
+
+hr {
+	border-top: 1px solid;
+	max-width: 85%;
+}
