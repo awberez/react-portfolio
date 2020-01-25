@@ -122,7 +122,7 @@ class App extends Component {
                 <h3 className="logoText">AWBdesign</h3>
               </div>
               <div className="container copy">
-                <p>Copyright &copy; 2019 Alex Berez</p>
+                <p>Copyright &copy; 2020 Alex Berez</p>
               </div>
             </footer>
           </div>
