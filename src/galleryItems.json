@@ -1,5 +1,12 @@
 [
 	{
+		"name": "Stuff Alex Wants", 
+		"image": "./images/stuffalexwants.png", 
+		"link": "https://stuffalexwants.com/",
+		"github": "https://github.com/awberez/stuffalexwants",
+		"text": "A digital parody of a holiday/birthday/whenever wishlist."
+	},
+	{
 		"name": "Barker", 
 		"image": "./images/barker.png", 
 		"link": "https://barkerapp.herokuapp.com/",
