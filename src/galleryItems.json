@@ -1,5 +1,12 @@
 [
 	{
+		"name": "The Chess School: Play", 
+		"image": "./images/tcsplay.png", 
+		"link": "http://play.thechessschool.net/demo.html",
+		"github": "https://github.com/awberez/TCS_Play",
+		"text": "A clean and simple chess service for coaches and academic clubs to pair students for practice games."
+	},
+	{
 		"name": "Stuff Alex Wants", 
 		"image": "./images/stuffalexwants.png", 
 		"link": "https://stuffalexwants.com/",
@@ -33,19 +40,6 @@
 		"link": "https://awberez.github.io/sw-game/",
 		"github": "https://github.com/awberez/sw-game",
 		"text": "A game based around some of the lesser-known characters from the original Star Wars trilogy."
-	},
-	{
-		"name": "Memory Game", 
-		"image": "./images/memory.png", 
-		"link": "https://awberez.github.io/memory-game/",
-		"github": "https://github.com/awberez/memory-game",
-		"text": "A React application designed to test your memory. Don't click the same color twice!"
-	},
-	{
-		"name": "Dinosaur Triva", 
-		"image": "./images/dinosaur.png", 
-		"link": "https://awberez.github.io/Trivia-Game/",
-		"github": "https://github.com/awberez/Trivia-Game",
-		"text": "Can you answer correctly before the timer runs out?"
 	}
+	
 ]
