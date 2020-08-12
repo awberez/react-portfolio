@@ -22,7 +22,8 @@ class App extends Component {
     for (let i = 0; i < galleryItems.length; i++) {
       let tile = {  "id": i, 
                     "name": galleryItems[i].name, 
-                    "image": galleryItems[i].image, 
+                    "image": galleryItems[i].image,
+                    "image_small": galleryItems[i].image_small, 
                     "text": galleryItems[i].text, 
                     "link": galleryItems[i].link, 
                     "github": galleryItems[i].github
@@ -56,7 +57,7 @@ class App extends Component {
             id="showAbout"
             focus={this.state.showAbout ? "active btn btn-secondary" : "inactive btn btn-secondary"}
             selectView={this.selectView}
-          />
+          />*/}
           <PageTab
             name="Gallery"
             id="showGallery"
@@ -68,7 +69,7 @@ class App extends Component {
             id="showContact"
             focus={this.state.showContact ? "active btn btn-secondary" : "inactive btn btn-secondary"}
             selectView={this.selectView}
-          />*/}
+          />
         </div>
           {/* Portfolio Gallery */}
         {this.state.showGallery 
@@ -94,7 +95,7 @@ class App extends Component {
                     selectTile={this.selectTile}
                     key={tile.id}
                     id={tile.id}
-                    image={tile.image}
+                    image={tile.image_small}
                   />
                 ))}
               </div>
@@ -114,9 +115,8 @@ class App extends Component {
           <div />
         }
           {/* Footer */}
- 
+
           <div className="col-12 footerBar">
-            <footer className="py-5">
               <div className="logoDiv">
                 <img src="/images/AWB_logo.svg" className="awbLogo" alt="logo"/>
                 <h3 className="logoText">AWBdesign</h3>
@@ -124,7 +124,6 @@ class App extends Component {
               <div className="container copy">
                 <p>Copyright &copy; 2020 Alex Berez</p>
               </div>
-            </footer>
           </div>
 
       </div>
