@@ -5,7 +5,7 @@
 		"image_small": "./images/tcsplaysmall.jpg", 
 		"link": "http://play.thechessschool.net/demo.html",
 		"github": "https://github.com/awberez/TCS_Play",
-		"text": "Clean and simple chess service for coaches and academic clubs to pair students for virtual games."
+		"text": "Online chess service for coaches and academic clubs to pair students for virtual games."
 	},
 	{
 		"name": "Stuff Alex Wants", 
@@ -13,7 +13,7 @@
 		"image_small": "./images/stuffalexwantssmall.jpg", 
 		"link": "https://stuffalexwants.com/",
 		"github": "https://github.com/awberez/stuffalexwants",
-		"text": "Humerous take on a digital wishlist."
+		"text": "Humerous take on a digital wishlist with price scraping."
 	},
 	{
 		"name": "Barker", 
@@ -37,7 +37,7 @@
 		"image_small": "./images/makeItsmall.jpg",  
 		"link": "https://thinmintz.github.io/MakeIt-or-TakeIt/",
 		"github": "https://github.com/ThinMintz/MakeIt-or-TakeIt",
-		"text": "Search for recipes or take-out restaurants based on specific ingredients or genres of cuisine."
+		"text": "Search for recipes or take-out restaurants based on ingredients or genres of cuisine."
 	},
 	{
 		"name": "Star Wars Game", 

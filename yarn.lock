@@ -5278,6 +5278,10 @@ react-scripts@1.1.0:
   optionalDependencies:
     fsevents "1.1.2"
 
+react-scroll-into-view-if-needed@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/react-scroll-into-view-if-needed/-/react-scroll-into-view-if-needed-2.1.7.tgz#cb349882ec1462025ed63d47bf37f3504f7c1b32"
+
 react@^16.9.0:
   version "16.9.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"

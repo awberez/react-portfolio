@@ -33,7 +33,7 @@ class App extends Component {
     return tiles;
   }
 
-  selectTile = id => { this.setState({chosen: id}, () => { document.getElementById("headerBar").scrollIntoView(); } );}
+  selectTile = id => { this.setState({chosen: id} );}
 
   selectView = id => { this.setState({showAbout: false, showGallery: false, showContact: false}, () => { this.setState({[id]: true}); } );}
 
@@ -76,7 +76,7 @@ class App extends Component {
         ? 
           <div className="row galleryBody">
                {/* Main portfolio display */}
-            <div className="order-1 order-lg-2 col-12 col-lg-8 galleryMain">
+            <div className="order-1 order-lg-2 col-12 col-lg-8 galleryMain" id="mainDisplay">
               <div className="row">
                 <GalleryDisplay
                   name={this.state.tiles[this.state.chosen].name}
@@ -96,6 +96,7 @@ class App extends Component {
                     key={tile.id}
                     id={tile.id}
                     image={tile.image_small}
+                    chosen={this.state.chosen}
                   />
                 ))}
               </div>

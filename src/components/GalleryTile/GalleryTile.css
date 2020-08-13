@@ -3,8 +3,17 @@
 	width: auto;
 	max-width: 100%;
 	max-height: 200px;
-	border: 2px solid #474747;
-	border-radius: 5px;
+	border: 1px solid #474747;
+}
+
+.inactive .tileImage:hover {
+	box-shadow: 0 0 0 2px #474747;
+}
+
+@media (hover: none) {
+   	.tileImage:hover {
+      	box-shadow: 0 0 0 0px #474747;
+	}
 }
 
 .tile {
