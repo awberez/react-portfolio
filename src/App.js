@@ -8,14 +8,16 @@ import "./App.css";
 
 class App extends Component {
 
-  state = { 
-    chosen: 0,
-    showGallery: true,
-    showAbout: false,
-    showContact: false
+  constructor(props){
+    super(props);
+    this.state = {
+      chosen: 0,
+      showGallery: true,
+      showAbout: false,
+      showContact: false,
+      tiles: this.tileMaker()
+    }
   }
-
-  UNSAFE_componentWillMount() { this.setState({ tiles: this.tileMaker() }); }
 
   tileMaker = () => {
     let tiles = [];
@@ -49,7 +51,7 @@ class App extends Component {
           <header className="page-header" id="headerBar">
             <div>
               <h1 className="subHeader">Alex Berez</h1>
-              <h3 className="subHeader">Web Design Portfolio</h3>
+              <h3 className="subHeader">Web Design</h3>
             </div>
           </header>
           {/*<PageTab
