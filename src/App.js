@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from 'axios'
 import PageTab from "./components/PageTab";
 import Contact from "./components/Contact"
 import GalleryDisplay from "./components/GalleryDisplay";
@@ -15,6 +16,11 @@ class App extends Component {
       showGallery: true,
       showAbout: false,
       showContact: false,
+      name: '',
+      email: '',
+      message: '',
+      enable: false,
+      contactSent: false,
       tiles: this.tileMaker()
     }
   }
@@ -39,8 +45,44 @@ class App extends Component {
 
   selectView = id => { this.setState({showAbout: false, showGallery: false, showContact: false}, () => { this.setState({[id]: true}); } );}
 
-  sendMail = content => {
+  onNameChange = event => {
+    this.setState({name: event.target.value}, ()=>{this.enableSubmit();})
+  }
 
+  onEmailChange = event => {
+    this.setState({email: event.target.value}, ()=>{this.enableSubmit();})
+  }
+
+  onMessageChange = event => {
+    this.setState({message: event.target.value}, ()=>{this.enableSubmit();})
+  }
+
+  enableSubmit = () => {
+    console.log("checking");
+    if (2 <= this.state.name.length &&
+        6 <= this.state.email.length &&
+        2 <= this.state.message.length) {
+      this.setState({enable: true});
+      console.log("true");
+    }
+    else { this.setState({enable: false}); };
+  }
+
+  sendMail = e => {
+    e.preventDefault();
+    let data = {
+      name: this.state.name,
+      email:this.state.email,
+      message: this.state.message
+    };
+    axios({
+      method: "POST", 
+      url:"https://6prn0e5g37.execute-api.us-east-1.amazonaws.com/contact", 
+      data:  data,
+      headers: { 'Content-Type': 'application/json' },
+    }).then((response)=>{
+      this.setState({name: '', email: '', message: '', contactSent: true})
+    });
   }
 
   render() {
@@ -110,7 +152,15 @@ class App extends Component {
           <div className="row">
             <div className="col-12">
               <Contact
-                sendMail={this.SendMail}
+                name={this.state.name}
+                onNameChange={this.onNameChange}
+                email={this.state.email}
+                onEmailChange={this.onEmailChange}
+                message={this.state.message}
+                onMessageChange={this.onMessageChange}
+                enable={this.state.enable}
+                sendMail={this.sendMail}
+                contactSent={this.state.contactSent}
               />
             </div>
           </div>
