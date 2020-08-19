@@ -2,11 +2,15 @@
 	width: 350px;
 }
 
+@media (max-width: 400px) {
+
+	.formText {
+		width: 250px;
+	}
+	
+}
+
 textarea {
 	min-height: 150px;
 	max-height: 400px;
-}
-
-form button {
-	
 }
