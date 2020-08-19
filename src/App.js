@@ -90,12 +90,14 @@ class App extends Component {
       <div className="container-fluid text-center wrapper">
           {/* Header */}
         <div className="col-12">
-          <header className="page-header" id="headerBar">
-            <div>
-              <h1 className="subHeader">Alex Berez</h1>
-              <h3 className="subHeader">Web Design</h3>
-            </div>
-          </header>
+          <div className="headerBorder">
+            <header className="page-header" id="headerBar">
+              <div>
+                <h1 className="subHeader">Alex Berez</h1>
+                <h3 className="subHeader">Web Design</h3>
+              </div>
+            </header>
+          </div>
           {/*<PageTab
             name="About"
             id="showAbout"
@@ -168,7 +170,6 @@ class App extends Component {
           <div />
         }
           {/* Footer */}
-
           <div className="col-12 footerBar">
               <div className="logoDiv">
                 <img src="/images/AWB_logo.svg" className="awbLogo" alt="logo"/>

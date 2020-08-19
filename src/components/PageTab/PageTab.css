@@ -19,8 +19,7 @@ button {
 	color: #dbdbdb;
 	font-size: 18px;
 	background-image: url(/images/irongrip.png);
-	background-color: black;
-	clip-path: polygon(15% 100%, 85% 100%, 100% 0, 0 0);
+	clip-path: polygon(14.5% 100%, 85.5% 100%, 100% 0, 0 0);
 	transition: .25s;
 }
 
