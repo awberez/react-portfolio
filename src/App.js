@@ -70,6 +70,7 @@ class App extends Component {
 
   sendMail = e => {
     e.preventDefault();
+    this.setState({enable: false});
     let data = {
       name: this.state.name,
       email:this.state.email,
